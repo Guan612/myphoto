@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:hint="请输入用户名"
         android:textColor="@android:color/darker_gray"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="30dp"
         android:inputType="text"/>
 
     <EditText
@@ -43,11 +43,12 @@
         android:layout_height="wrap_content"
         android:text="我同意用户协议"
         android:textSize="15dp"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="10dp"/>
 
     <Button
+        android:id="@+id/register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="注册"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="20dp"/>
 </LinearLayout>
