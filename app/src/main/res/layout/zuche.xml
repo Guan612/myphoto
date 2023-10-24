@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="欢迎注册"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="50dp"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/Photoprism"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/userid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入用户名"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="60dp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入密码"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="30dp"
+        android:inputType="numberPassword"/>
+
+    <RadioButton
+        android:id="@+id/allowUserProtocol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我同意用户协议"
+        android:textSize="15dp"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:layout_marginTop="50dp"/>
+</LinearLayout>
