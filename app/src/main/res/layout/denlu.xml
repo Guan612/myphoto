@@ -50,6 +50,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="还没有注册？点击跳转注册" />
+        android:text="还没有注册？点击跳转注册"
+        android:onClick="jumpRegistration"/>
 
 </LinearLayout>
