@@ -13,12 +13,25 @@ public class DenLuPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.denlupage);
-        Button mButton=findViewById(R.id.jumpRegistration);
-        mButton.setOnClickListener(new View.OnClickListener(){
+
+        //跳转登录页面
+        Button jumpRegistrationButton=findViewById(R.id.jumpRegistration);
+        jumpRegistrationButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent();
                 intent.setClassName("com.example.myphoto","com.example.myphoto.ZuChePage");
+                startActivity(intent);
+            }
+        });
+
+        //跳转主页
+        Button loginButton=findViewById(R.id.login);
+        loginButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent();
+                intent.setClassName("com.example.myphoto","com.example.myphoto.MainActivity");
                 startActivity(intent);
             }
         });
