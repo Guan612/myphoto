@@ -35,6 +35,9 @@ public class DenLuPage extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        //登录发送信息给后台
+
     }
 
 }
