@@ -43,6 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:backgroundTint="#2196F3"
         android:text="登录" />
 
     <Button
@@ -50,7 +51,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="还没有注册？点击跳转注册"/>
+        android:backgroundTint="#4CAF50"
+        android:text="还没有注册？点击跳转注册" />
 
 
 </LinearLayout>
