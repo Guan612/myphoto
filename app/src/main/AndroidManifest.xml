@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <!-- 安卓应用使用网络能力 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -11,12 +14,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Myphoto"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".EditDiaryPage"
+            android:exported="false" />
+        <activity
             android:name=".ZuChePage"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.example.myphoto.ZC" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -25,6 +33,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="com.example.myphoto.Dl" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -33,6 +42,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
