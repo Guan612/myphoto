@@ -35,8 +35,7 @@
         android:layout_height="wrap_content"
         android:hint="请输入密码"
         android:textColor="@android:color/darker_gray"
-        android:layout_marginTop="30dp"
-        android:inputType="numberPassword"/>
+        android:layout_marginTop="30dp"/>
 
     <RadioButton
         android:id="@+id/allowUserProtocol"
