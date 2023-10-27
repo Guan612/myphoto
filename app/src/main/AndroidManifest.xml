@@ -16,7 +16,7 @@
             android:name=".ZuChePage"
             android:exported="true" >
             <intent-filter>
-                <action android:name="com.example.myphoto.ZuChePage" />
+                <action android:name="com.example.myphoto.ZC" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -24,8 +24,8 @@
             android:name=".DenLuPage"
             android:exported="true">
             <intent-filter>
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="com.example.myphoto.Dl" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
@@ -33,7 +33,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
