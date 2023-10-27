@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button testbtn = (Button)findViewById(R.id.testbtn);
-
+        //测试登录按钮，后面修改
         testbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
