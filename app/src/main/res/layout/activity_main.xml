@@ -5,11 +5,19 @@
     android:layout_height="match_parent"
     android:padding="5dp">
     <!-- WebView组件 -->
-    <WebView
+<!--    <WebView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:id="@+id/testweb" />-->
+
+    <FrameLayout
+        android:id="@+id/diaryList"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:id="@+id/testweb" />
+        android:layout_weight="1">
+
+    </FrameLayout>
 
     <!-- 原生底栏 -->
     <LinearLayout
