@@ -9,6 +9,9 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
+import android.widget.ListView;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,10 +23,14 @@ public class MainActivity extends AppCompatActivity {
         //测试登录按钮，后面修改
         Button testbtn = (Button)findViewById(R.id.testbtn);
 
-        //初始化webView
-        WebView testweb = findViewById(R.id.testweb);
-        testweb.getSettings().setJavaScriptEnabled(true); // 启用JavaScript支持
-        testweb.loadUrl("https://cn.bing.com");
+        //初始化ListView
+        ListView diaryList = findViewById(R.id.diaryList);
+        ArrayList<String> dataList = new ArrayList<>();
+        dataList.add("Item 1");
+        dataList.add("Item 2");
+        dataList.add("Item 3");
+
+        
 
         //测试跳转按钮
         testbtn.setOnClickListener(new View.OnClickListener() {
@@ -34,20 +41,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //初始化web,先清除缓存
-        testweb.clearCache(true);
-        testweb.setWebViewClient(new WebViewClient() {
-            @Override
-            public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                // 在WebView中加载链接，而不是打开默认的浏览器应用
-                view.loadUrl(url);
-                return true;
-            }
-        });
-
-        testweb.setWebChromeClient(new WebChromeClient() {
-            // 处理JavaScript对话框、进度等事件
-            // 可以根据需要重写相应的方法
-        });
     }
 }

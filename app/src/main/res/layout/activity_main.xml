@@ -11,13 +11,13 @@
 <!--        android:layout_weight="1"-->
 <!--        android:id="@+id/testweb" />-->
 
-    <FrameLayout
+    <ListView
         android:id="@+id/diaryList"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
 
-    </FrameLayout>
+    </ListView>
 
     <!-- 原生底栏 -->
     <LinearLayout
