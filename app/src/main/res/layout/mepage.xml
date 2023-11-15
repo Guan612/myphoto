@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我的"
+        android:textSize="30dp"
+        android:textColor="@color/design_default_color_primary_variant"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/photoprism"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/userid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="用户名"
+        android:textSize="23dp"
+        android:textColor="@color/design_default_color_primary_variant"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/goMainactivy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="#2196F3"
+        android:text="回到主页" />
+    <Button
+        android:id="@+id/Setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#2196F3"
+        android:text="设置" />
+
+    <Button
+        android:id="@+id/AboutMe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#4CAF50"
+        android:text="关于" />
+
+
+</LinearLayout>
