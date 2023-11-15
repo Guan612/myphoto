@@ -21,27 +21,39 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //测试登录按钮，后面修改
-        Button testbtn = (Button)findViewById(R.id.testbtn);
+        //跳转按钮定义
+        Button Mebtn = (Button)findViewById(R.id.Mebtn);
+        Button EditDiary = (Button)findViewById(R.id.EditDiary);
 
         //初始化ListView
         ListView diaryList = findViewById(R.id.diaryList);
-        ArrayList<String> dataList = new ArrayList<>();
-        dataList.add("Item 1");
-        dataList.add("Item 2");
-        dataList.add("Item 3");
+        ArrayList<Diary> diaryListdata = new ArrayList<>();
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, dataList);
-        
+        //添加数据
+        diaryListdata.add(new Diary(R.drawable.default_cover, "标题1", "内容1", "时间1"));
+        diaryListdata.add(new Diary(R.drawable.default_cover, "标题2", "内容2", "时间2"));
+        diaryListdata.add(new Diary(R.drawable.default_cover, "标题3", "内容3", "时间3"));
 
-        //测试跳转按钮
-        testbtn.setOnClickListener(new View.OnClickListener() {
+        DiaryAdapter adapter = new DiaryAdapter(this, diaryListdata);
+        diaryList.setAdapter(adapter);
+
+        //跳转按钮
+        //跳转我的
+        Mebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent testintent = new Intent(MainActivity.this, DenLuPage.class);
-                startActivity(testintent);
+                Intent meintent = new Intent(MainActivity.this, MePage.class);
+                startActivity(meintent);
             }
         });
 
+        //跳转编辑页
+        EditDiary.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent Etintent = new Intent(MainActivity.this, EditDiaryPage.class);
+                startActivity(Etintent);
+            }
+        });
     }
 }

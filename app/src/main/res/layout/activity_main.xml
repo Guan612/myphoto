@@ -27,7 +27,7 @@
         android:gravity="center">
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/timeLine"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -37,7 +37,7 @@
             android:text="时间线" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/EditDiary"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -47,7 +47,7 @@
             android:text="添加日记" />
 
         <Button
-            android:id="@+id/testbtn"
+            android:id="@+id/Mebtn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
