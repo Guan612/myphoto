@@ -39,11 +39,20 @@
         android:layout_marginTop="200dp"
         android:backgroundTint="#2196F3"
         android:text="回到主页" />
+
+    <Button
+        android:id="@+id/goLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#2196F3"
+        android:text="去登录"/>
+
     <Button
         android:id="@+id/Setting"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="10dp"
         android:backgroundTint="#2196F3"
         android:text="设置" />
 
@@ -51,7 +60,7 @@
         android:id="@+id/AboutMe"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="10dp"
         android:backgroundTint="#4CAF50"
         android:text="关于" />
 
