@@ -17,24 +17,24 @@
         android:hint="输入标题"
         android:padding="16dp"
         android:textSize="20sp" />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:gravity="center">-->
 
-        <Spinner
-            android:id="@+id/mood"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"/>
+<!--        <Spinner-->
+<!--            android:id="@+id/mood"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="16dp"/>-->
 
-        <Spinner
-            android:id="@+id/wather"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"/>
-    </LinearLayout>
+<!--        <Spinner-->
+<!--            android:id="@+id/wather"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="16dp"/>-->
+<!--    </LinearLayout>-->
 
     <EditText
         android:id="@+id/editContent"
