@@ -15,7 +15,9 @@ public class MePage extends AppCompatActivity {
         setContentView(R.layout.mepage);
 
         Button goMainactivy = findViewById(R.id.goMainactivy);
+        Button goLogin = findViewById(R.id.goLogin);
 
+        //返回主页跳转
         goMainactivy.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
@@ -24,6 +26,14 @@ public class MePage extends AppCompatActivity {
                 startActivity(intent);
             }
 
+        });
+        //登录按钮跳转
+        goLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                intent.setClassName("com.example.myphoto","com.example.myphoto.DenLuPage");
+            }
         });
 
     }

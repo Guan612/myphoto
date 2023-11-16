@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutPage"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/default_cover3" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关于本项目"
+        android:textSize="30dp"
+        android:layout_marginTop="50dp"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="本项目是一个开源的日记app"/>
+
+    <TextView
+        android:id="@+id/aboutlink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开源地址点我"
+        android:textColorLink="#0077dd"
+        android:autoLink="web" />
+</LinearLayout>

@@ -17,18 +17,28 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".AboutPage"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.example.myphoto.AB"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".MePage"
             android:exported="false">
             <intent-filter>
-                <action android:name="com.example.myphoto.ME"/>
+                <action android:name="com.example.myphoto.ME" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
             android:name=".EditDiaryPage"
-            android:exported="false" >
+            android:exported="false">
             <intent-filter>
-                <action android:name="com.example.myphoto.ET"/>
+                <action android:name="com.example.myphoto.ET" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
